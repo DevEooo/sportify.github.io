@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/background_loress.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f2f2f2;
+}
+
+.login-container {
+    background-color: #2a2a2a; 
+    margin-left: 43%;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+    width: 350px;
+    color: #f2f2f2; 
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #e5de00;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: #e5de00;
+}
+
+.form-group input {
+    width: 90%;
+    padding: 10px 26px 13px 10px;
+    border: 1px solid #555;
+    background-color: #444342; 
+    color: #f2f2f2; 
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group i {
+    position: absolute;
+    right: 13px;
+    top: 37px;
+    font-size: 19px;
+    color: #e5de00;
+}
+
+.form-group input:focus {
+    border-color: #e5de00;
+    outline: none;
+}
+
+.login-button {
+    width: 40%;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 105px;
+    background-color: #e5de00; 
+    color: #1c1c1c; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color:rgb(185, 173, 1); 
+    color: #000; 
+}
+
+p{
+    margin-left: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: cyan;
+}

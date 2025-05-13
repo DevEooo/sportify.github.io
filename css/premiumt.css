@@ -1,0 +1,212 @@
+:root {
+  --primary: #e5de00;
+  --dark: #121212;
+  --light-dark: #181818;
+  --lighter-dark: #282828;
+  --light-gray: #b3b3b3;
+  --white: #ffffff;
+  --black: #000000;
+  --shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--dark);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.premium-btn {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.premium-btn:hover {
+  transform: scale(1.05);
+}
+
+main {
+  flex: 1;
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.premium-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.premium-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.premium-header p {
+  font-size: 1.1rem;
+  color: var(--light-gray);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 280px;
+  background-color: var(--lighter-dark);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--white);
+}
+
+.card h4 {
+  font-size: 1rem;
+  color: var(--light-gray);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--light-gray);
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.card ul {
+  list-style: none;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+.card li {
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+  color: var(--light-gray);
+  font-size: 0.95rem;
+}
+
+.card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.select-btn {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.select-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(229, 222, 0, 0.4);
+}
+
+/* Discount Styles */
+.discount-card {
+  border: 2px solid var(--primary);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary);
+  color: var(--black);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--light-dark);
+  color: var(--light-gray);
+  font-size: 14px;
+}
